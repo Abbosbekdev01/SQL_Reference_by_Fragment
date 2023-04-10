@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homFragment">
+
+    <fragment
+        android:id="@+id/homFragment"
+        android:name="uz.abbosbek.my_sqlite_reference.ui.HomFragment"
+        android:label="fragment_hom"
+        tools:layout="@layout/fragment_hom" >
+        <action
+            android:id="@+id/action_homFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+        <action
+            android:id="@+id/action_homFragment_to_customerFragment"
+            app:destination="@id/customerFragment" />
+        <action
+            android:id="@+id/action_homFragment_to_ordersFragment"
+            app:destination="@id/ordersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="uz.abbosbek.my_sqlite_reference.ui.EmployeeFragment"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" />
+    <fragment
+        android:id="@+id/customerFragment"
+        android:name="uz.abbosbek.my_sqlite_reference.ui.CustomerFragment"
+        android:label="CustomerFragment"
+        tools:layout="@layout/fragment_employee"/>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="uz.abbosbek.my_sqlite_reference.ui.OrdersFragment"
+        android:label="OrdersFragment"
+        tools:layout="@layout/fragment_employee"/>
+</navigation>

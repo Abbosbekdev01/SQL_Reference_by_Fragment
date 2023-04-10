@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My_SQLite_Reference</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="employee_spinner_prompt">Select an employee</string>
+    <string name="customer_spinner_prompt">Select an customer</string>
+</resources>
